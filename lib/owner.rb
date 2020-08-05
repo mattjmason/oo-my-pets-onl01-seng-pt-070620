@@ -26,6 +26,10 @@ class Owner
     "I am a #{self.species}."
   end 
   
+  def buy_cat(name)
+    Cat.new(name, self)
+  end 
+  
   def self.count 
     @@all.count
   end 
