@@ -34,8 +34,8 @@ class Owner
     Dog.new(name, self)
   end 
   
-  def walks_dogs
-    Owner.dogs.each {|dog| dog.mood = "happy"}
+  def walk_dogs
+    self.dogs.each {|dog| dog.mood = "happy"}
   end 
   
   def self.count 
